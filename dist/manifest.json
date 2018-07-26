@@ -1,14 +1,19 @@
 {
-  "name": "My Bookmarks",
+  "name": "My React App",
   "version": "1.1",
-  "description": "A browser action with a popup dump of all bookmarks, including search, add, edit and delete.",
+  "description": "Sample React App",
   "permissions": [
     "bookmarks"
   ],
   "browser_action": {
-    "default_title": "My Bookmarks",
-    "default_icon": "logo-small.png",
+    "default_title": "My React App",
+    "default_icon": "icons/logo-small.png",
     "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "icons/logo-small.png",
+    "48": "icons/logo-small.png",
+    "128": "icons/logo-small.png"
   },
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"

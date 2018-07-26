@@ -5,9 +5,13 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: [{
+          loader: "babel-loader",
+          options: {
+            presets: ['react'],
+            plugins: ['transform-class-properties']
+          }
+        }]
       },
       {
         test: /\.html$/,
